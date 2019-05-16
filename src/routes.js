@@ -1,12 +1,12 @@
 import React from 'react';
 import { Redirect, Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './Home/Home';
-import Profile from './Profile/Profile';
+import Home from './Components/Home';
+import Profile from './Components/Profile';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
-import Dashboard from './Dashboard';
+import Dashboard from './Components/Dashboard'
 
 const auth = new Auth();
 
