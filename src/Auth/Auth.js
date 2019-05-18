@@ -1,6 +1,16 @@
 import auth0 from 'auth0-js';
-import { AUTH_CONFIG } from './auth0-variables';
+// import { AUTH_CONFIG } from './auth0-variables';
 import history from '../history';
+
+// console.log(process.env);
+
+if (process.env.NODE_ENV === 'development'){
+  console.log('we got a dev env');
+}else{
+  console.log('this aint no dev env');
+};
+
+// const isProduction = process.env.NODE_ENV === 'development';
 
 export default class Auth {
   accessToken;
@@ -10,9 +20,9 @@ export default class Auth {
   tokenRenewalTimeout;
 
   auth0 = new auth0.WebAuth({
-    domain: AUTH_CONFIG.domain,
-    clientID: AUTH_CONFIG.clientId,
-    redirectUri: AUTH_CONFIG.callbackUrl,
+    domain: process.env.domain,
+    clientID: process.env.clientId,
+    redirectUri: process.env.callbackUrl,
     responseType: 'token id_token',
     scope: 'openid profile'
   });
