@@ -33,7 +33,7 @@ class App extends Component {
       <Grid id="Header-Container">
         <Row>
           <Col xs={12}>
-            <h1 class="blue">Auth0-React Starter Pack</h1>
+            <h1 className="blue">Auth0-React Starter Pack</h1>
             {isAuthenticated() &&
               <Button
                 bsStyle="primary"
