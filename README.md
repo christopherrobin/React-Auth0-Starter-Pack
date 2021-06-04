@@ -1,3 +1,5 @@
+<img width="947" alt="Auth0-Starter" src="https://user-images.githubusercontent.com/464211/120866269-93f6fd80-c55d-11eb-9332-d173d1425ecd.png">
+
 # React and Auth0 Starter Pack
 
 This sample demonstrates how to renew `access_token`s in a React application with Auth0 using `checkSession`. For more information, read [our reference documentation](https://auth0.com/docs/libraries/auth0js#using-checksession-to-acquire-new-tokens).
