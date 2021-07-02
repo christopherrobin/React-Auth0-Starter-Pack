@@ -1,4 +1,4 @@
-<img width="947" alt="Auth0-Starter" src="https://user-images.githubusercontent.com/464211/120866269-93f6fd80-c55d-11eb-9332-d173d1425ecd.png">
+<img width="662" alt="Screen Shot 2021-07-02 at 4 24 07 PM" src="https://user-images.githubusercontent.com/464211/124325647-06ee9680-db53-11eb-8d29-9cd77519470a.png">
 
 # React and Auth0 Starter Pack
 
