@@ -1,0 +1,62 @@
+{
+    "env":{
+        "browser":true,
+        "node":true,
+        "es6":true
+    },
+    "ignorePatterns":[
+        "**/build/**"
+    ],
+    "parser":"@babel/eslint-parser",
+    "parserOptions":{
+        "ecmaVersion":6,
+        "sourceType":"module",
+        "ecmaFeatures":{
+            "jsx":true,
+            "experimentalObjectRestSpread":true
+        },
+        "requireConfigFile":false,
+        "babelOptions":{
+            "presets":[
+                "@babel/preset-react"
+            ]
+        }
+    },
+    "rules":{
+        "react/prop-types":"warn",
+		"no-console": ["warn", { "allow": ["warn", "error"] }],
+        "react/jsx-no-undef":[2, { "allowGlobals":true }],
+        "semi":["warn", "always"],
+        "quotes":["warn", "single"],
+        "indent":["warn", "tab"],
+		"react/jsx-indent": ["warn", "tab"],
+        "no-multi-spaces":["warn"],
+        "arrow-parens":["warn", "as-needed"],
+        "space-infix-ops":["warn"],
+        "no-trailing-spaces":["warn"],
+        "no-unused-vars":[
+            "warn",
+            {
+                "varsIgnorePattern":"^[A-Z]"
+            }
+        ],
+        "arrow-spacing":[
+            "warn",
+            {
+                "before":true,
+                "after":true
+            }
+        ],
+        "max-len":[
+            "error",
+            {
+                "code":120,
+                "tabWidth":4,
+                "ignoreUrls":true,
+                "ignoreStrings":true,
+                "ignoreTemplateLiterals":true,
+                "ignoreRegExpLiterals":true
+            }
+        ]
+    }
+}
