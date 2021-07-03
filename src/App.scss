@@ -1,9 +1,17 @@
+@import './variables.scss';
+
 #Header-Container{
   margin-bottom: 1em;
   margin-top: 1em;
 
 	.MuiButton-containedPrimary {
 		margin-right: 1em;
+	}
+
+	button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-disableElevation.Mui-disabled.Mui-disabled {
+		background: none;
+		color: $primary;
+		font-size: 1.2em;
 	}
 }
 
