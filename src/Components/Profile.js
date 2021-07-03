@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'reactstrap';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+
 import './Profile.css';
 
 const Profile = props => {
@@ -29,10 +34,19 @@ const Profile = props => {
 				<Choose>
 					<When condition={profile.name}>
 						<div>
-							<h1>Profile</h1>
-							<div><img src={profile.picture} alt="Profile" /></div>
-							<h3>{profile.name}</h3>
-							<p>Nickname: <em>{profile.nickname}</em></p>
+							<Card style={{ margin: '2em 0' }}>
+								<CardMedia
+									style={{ height: '20vh'}}
+									image={profile.picture}
+									title="Contemplative Reptile"
+								/>
+								<CardContent>
+									<h1>{profile.name}</h1>
+									Nickname
+									<h4><em>{profile.nickname}</em></h4>
+								</CardContent>
+							</Card>
+
 							<pre>{JSON.stringify(profile, null, 2)}</pre>
 						</div>
 					</When>
